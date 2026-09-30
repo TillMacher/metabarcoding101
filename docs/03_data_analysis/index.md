@@ -1,4 +1,4 @@
-# Data analysis – overview
+# Overview
 
 **Goal:** explore, filter and visualise your taxon table.
 

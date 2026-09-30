@@ -1,4 +1,4 @@
-# APSCALE-GUI – overview
+# Overview
 
 The **APSCALE-GUI** bundles Demultiplexer2, APSCALE, APSCALE-blast and
 BOLDigger3 in one graphical app. It runs the same steps as the command-line

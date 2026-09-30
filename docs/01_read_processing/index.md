@@ -1,4 +1,4 @@
-# Read processing – overview
+# Overview
 
 **Goal:** turn raw Illumina reads into an ESV/OTU table.
 

@@ -1,4 +1,4 @@
-# Taxonomic assignment – overview
+# Overview
 
 **Goal:** assign a taxonomic name to each ESV/OTU sequence.
 

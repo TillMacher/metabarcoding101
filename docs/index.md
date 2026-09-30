@@ -51,9 +51,7 @@ pages in order. Every step uses the same {doc}`example dataset
 :caption: Getting started
 
 00_getting-started/00_introduction
-00_getting-started/01_conda_installation
-00_getting-started/02_apscale_env_installation
-00_getting-started/03_TTT_env_installation
+00_getting-started/index
 00_getting-started/04_example_data
 ```
 
