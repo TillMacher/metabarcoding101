@@ -3,28 +3,18 @@
 Welcome! This site is a hands-on tutorial for analysing DNA metabarcoding data,
 from raw sequencing reads to ecological results, using two open-source tools:
 
-| Tool | What it does | Repository |
-|------|--------------|------------|
-| **APSCALE** | Processes raw reads into ESV/OTU tables (merging, trimming, filtering, denoising, clustering) | [GitHub](https://github.com/DominikBuchner/apscale) |
-| **TaxonTableTools (TTT)** | Explores, filters and visualises taxon tables (diversity, ordination, plots, export) | [GitHub](https://github.com/YOUR-GITHUB-USERNAME/TaxonTableTools2) |
+| Environment | Step                | Tool                    | What it does                                                                                           | Repository                                                 |
+|-------------|---------------------|--------------------------|--------------------------------------------------------------------------------------------------------|------------------------------------------------------------|
+| APSCALE4    | Raw Data Processing | **Demultiplexer2**       | Demultiplexes paired-end Illumina sequencing reads by identifying and sorting inline tags.             | [GitHub](https://github.com/DominikBuchner/demultiplexer2) |
+| APSCALE4    | Raw Data Processing | **APSCALE**              | Processes raw reads into ESV/OTU tables (merging, trimming, filtering, denoising, clustering)          | [GitHub](https://github.com/DominikBuchner/apscale)        |
+| APSCALE4    | Raw Data Processing | **APSCALE-GUI**          | Graphical-User-Interface of APSCALE4 (including Demutliplexer2, APSCALE, APSCALE-blast, and BOLDigger3 | [GitHub](https://github.com/TillMacher/apscale_gui)        |
+| APSCALE4    | Raw Data Processing | **APSCALE-blast**        | Assigns taxonomy to sequences against various available databases                                      | [GitHub](https://github.com/TillMacher/apscale_blast)      |
+| APSCALE4    | Raw Data Processing | **BOLDigger3**           | Assigns taxonomy to sequences against the BOLDsystemsv5 database                                       | [GitHub](https://github.com/DominikBuchner/boldigger3)     |
+| TTT         | Data Analysis       | **TaxonTableTools (TTT)** | Explores, filters and visualises taxon tables (diversity, ordination, plots, export)                   | [GitHub](https://github.com/TillMacher/TaxonTableTools2)   |
 
-## How the workflow fits together
-
-```text
-raw FASTQ reads
-      │
-      ▼
-  APSCALE  ──►  ESV / OTU table + sequences
-                        │
-                        ▼
-              taxonomic assignment
-                        │
-                        ▼
-                      TTT  ──►  figures, statistics, reports
-```
 
 :::{tip}
-New here? Start with {doc}`getting-started/installation`, then follow the pages
+New here? Start with {doc}`00_getting-started/00_introduction`, then follow the pages
 in order. Every step uses the same small example dataset, so you can reproduce
 all outputs yourself.
 :::
@@ -34,43 +24,40 @@ all outputs yourself.
 :hidden:
 :caption: Getting started
 
-getting-started/introduction
-getting-started/installation
-getting-started/example-data
+00_getting-started/00_introduction
+00_getting-started/01_conda_installation
+00_getting-started/02_apscale_env_installation
+00_getting-started/03_TTT_env_installation
 ```
 
 ```{toctree}
 :maxdepth: 2
 :hidden:
-:caption: APSCALE – read processing
+:caption: Read processing
 
-apscale/index
-apscale/project-setup
-apscale/running
-apscale/outputs
+01_read_processing/00_introduction
+01_read_processing/01_demultiplexer2
+01_read_processing/02_apscale
+01_read_processing/03_apscale_gui
 ```
 
 ```{toctree}
 :maxdepth: 2
 :hidden:
-:caption: TTT – data analysis
+:caption: Taxonomic assignment
 
-ttt/index
-ttt/import
-ttt/analysis
-ttt/export
+02_taxonomic_assignment/00_introduction
+02_taxonomic_assignment/01_apscale_blast
+02_taxonomic_assignment/02_boldigger3
+02_taxonomic_assignment/03_apscale_gui
 ```
 
 ```{toctree}
-:maxdepth: 1
+:maxdepth: 2
 :hidden:
-:caption: Help
+:caption: Taxonomic assignment
 
-faq
+03_data_analysis/00_introduction
+03_data_analysis/01_taxontabletools2
+03_data_analysis/02_apscale_data_analysis
 ```
-
-## Contents
-
-1. **Getting started:** {doc}`getting-started/introduction` · {doc}`getting-started/installation` · {doc}`getting-started/example-data`
-2. **APSCALE:** {doc}`apscale/index` · {doc}`apscale/project-setup` · {doc}`apscale/running` · {doc}`apscale/outputs`
-3. **TTT:** {doc}`ttt/index` · {doc}`ttt/import` · {doc}`ttt/analysis` · {doc}`ttt/export`
