@@ -26,7 +26,7 @@ the {doc}`APSCALE-GUI <04_apscale_gui/index>`.
 
 | Tool | What it does | Source |
 |------|--------------|--------|
-| **Demultiplexer2** | Sorts paired-end Illumina reads into samples by their inline tags | [GitHub](https://github.com/DominikBuchner/demultiplexer2) |
+| **Demultiplexer2** | Sorts paired-end Illumina reads into samples by their inline tags (successor: [demultiplexer3](https://github.com/DominikBuchner/demultiplexer3)) | [GitHub](https://github.com/DominikBuchner/demultiplexer2) |
 | **APSCALE** | Turns raw reads into ESV/OTU tables (merging, trimming, filtering, denoising, clustering) | [GitHub](https://github.com/DominikBuchner/apscale) |
 | **APSCALE-blast** | Assigns taxonomy using BLAST against a range of reference databases | [GitHub](https://github.com/TillMacher/apscale_blast) |
 | **BOLDigger3** | Assigns taxonomy against the BOLD Systems v5 database | [GitHub](https://github.com/DominikBuchner/boldigger3) |
@@ -36,9 +36,18 @@ the {doc}`APSCALE-GUI <04_apscale_gui/index>`.
 :::{note}
 The tools are installed into **two conda environments**:
 
-- `APSCALE4` – read processing and taxonomic assignment ({doc}`setup <00_getting-started/02_apscale_env_installation>`)
+- `apscale4` – read processing and taxonomic assignment ({doc}`setup <00_getting-started/02_apscale_env_installation>`)
 - `TTT` – data analysis with TaxonTableTools2 ({doc}`setup <00_getting-started/03_TTT_env_installation>`)
 :::
+
+:::{admonition} Tested versions
+This tutorial was written for APSCALE 4.3, APSCALE-GUI 3.4, APSCALE-blast 2.0,
+BOLDigger3 3.0 and TaxonTableTools2 2.4. Newer versions may look slightly different.
+:::
+
+```{todo}
+Add a workflow figure (e.g. `_static/workflow.png`) to replace or complement the text diagram.
+```
 
 :::{tip}
 New here? Start with {doc}`00_getting-started/00_introduction` and follow the

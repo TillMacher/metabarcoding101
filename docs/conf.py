@@ -6,6 +6,7 @@ copyright = "2026, Till-Hendrik Macher"
 extensions = [
     "myst_parser",        # write pages in Markdown
     "sphinx_copybutton",  # copy button on code blocks
+    "sphinx.ext.todo",    # {todo} placeholder boxes
 ]
 
 myst_enable_extensions = [
@@ -29,8 +30,11 @@ html_theme_options = {
 # Shows an "Edit on GitHub" link on every page
 html_context = {
     "display_github": True,
-    "github_user": "YOUR-GITHUB-USERNAME",
+    "github_user": "TillMacher",
     "github_repo": "metabarcoding101",
     "github_version": "main",
     "conf_py_path": "/docs/",
 }
+
+# Placeholder boxes: set to False to hide all {todo} boxes on the website
+todo_include_todos = True
